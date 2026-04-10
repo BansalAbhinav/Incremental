@@ -2,16 +2,16 @@ package com.edutech.progressive.entity;
 import java.util.Date;
 
 public class Transactions {
-private int transctionId;
+private int transactionId;
 private int accountId;
 private double amount;
 private String transactionType;
 private Date transactionDate;
 public int getTransctionId() {
-    return transctionId;
+    return transactionId;
 }
 public void setTransctionId(int transctionId) {
-    this.transctionId = transctionId;
+    this.transactionId = transctionId;
 }
 public int getAccountId() {
     return accountId;
@@ -38,7 +38,7 @@ public void setTransactionDate(Date transactionDate) {
     this.transactionDate = transactionDate;
 }
 public Transactions(int transctionId, int accountId, double amount, String transactionType, Date transactionDate) {
-    this.transctionId = transctionId;
+    this.transactionId = transctionId;
     this.accountId = accountId;
     this.amount = amount;
     this.transactionType = transactionType;

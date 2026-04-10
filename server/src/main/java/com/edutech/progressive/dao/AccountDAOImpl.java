@@ -1,5 +1,59 @@
 package com.edutech.progressive.dao;
 
-public class AccountDAOImpl {
+import java.util.List;
+
+import org.aspectj.apache.bcel.generic.RET;
+
+import com.edutech.progressive.entity.Accounts;
+
+public class AccountDAOImpl implements AccountDAO{
+
+    @Override
+    public int addAccount(Accounts accounts) {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'addAccount'");
+    }
+
+    @Override
+    public Accounts getAccountById(int accountId) {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'getAccountById'");
+    }
+
+    @Override
+    public void updateAccount(Accounts accounts) {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'updateAccount'");
+    }
+
+    @Override
+    public void deleteAccount(int accountId) {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'deleteAccount'");
+    }
+
+    @Override
+    public List<Accounts> getAllAccounts() {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'getAllAccounts'");
+    }
+//     public List<Accounts> getAllAccounts() {
+//         return null;
+//     }
+// public List<Accounts> getAllAccountsByCustomer(int customer_id) {
+//     return null;
+// }
+// public Accounts getAccountByld(int accountld) {
+//     return null;
+// }
+// public int addAccount(Accounts accounts) {
+//     return -1;
+// }
+// public void updateAccount(Accounts accounts) {
+//     return;
+// }
+// public void deleteAccount(int accountld) {
+//     return;
+// }
 
 }

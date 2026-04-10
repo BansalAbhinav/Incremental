@@ -2,18 +2,17 @@ package com.edutech.progressive.entity;
 
 public class Customers {
 
-private int cutomerId;
+private int customerId;
 private String name;
 private String email;
 private String username;
 private String password;
 private String role;
 public int getCutomerId() {
-    return cutomerId;
-    //checkiong
+    return customerId;
 }
 public void setCutomerId(int cutomerId) {
-    this.cutomerId = cutomerId;
+    this.customerId = cutomerId;
 }
 public String getName() {
     return name;
@@ -46,7 +45,7 @@ public void setRole(String role) {
     this.role = role;
 }
 public Customers(int cutomerId, String name, String email, String username, String password, String role) {
-    this.cutomerId = cutomerId;
+    this.customerId = cutomerId;
     this.name = name;
     this.email = email;
     this.username = username;
@@ -60,3 +59,30 @@ public Customers() {
 
 
 }
+
+
+/*
+CREATE TABLE customers (
+customer_id INT AUTO_INCREMENT PRIMARY KEY,
+name VARCHAR(255) NOT NULL,
+email VARCHAR(255) NOT NULL,
+username VARCHAR(255) NOT NULL,
+password VARCHAR(255) NOT NULL,
+role VARCHAR(255));
+
+CREATE TABLE accounts (
+account_id INT AUTO_INCREMENT PRIMARY KEY,
+customer_id INT NOT NULL,
+balance DECIMAL(10, 2) NOT NULL):
+
+
+
+CREATE TABLE transactions (
+transaction_id INT AUTO_INCREMENT PRIMARY KEY,
+account_id INT NOT NULL,
+amount DECIMAL(10, 2) NOT NULL,
+transaction_date TIMESTAMP NOT NULL,
+transaction_type VARCHAR(255) NOT NULL);
+
+
+*/
