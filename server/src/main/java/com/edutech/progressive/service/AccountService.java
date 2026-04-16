@@ -23,7 +23,7 @@ public interface AccountService {
         return List.of();
     }
     default Accounts getAccountById(int accountId) throws AccountNotFoundException, SQLException{
-        return null;
+        throw new AccountNotFoundException("Account not found");
     }
     default void updateAccount(Accounts accounts) throws SQLException {}
     default void deleteAccount(int accountId) throws SQLException {}
