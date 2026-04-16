@@ -6,7 +6,8 @@ import org.springframework.data.jpa.repository.JpaRepository;
 import java.util.List;
 
 public interface TransactionRepository extends JpaRepository<Transactions, Integer> {
-
     List<Transactions> findByAccountId(int accountId);
 
+    // Useful for cascading deletes (safe to include)
+    void deleteByAccountId(int accountId);
 }
